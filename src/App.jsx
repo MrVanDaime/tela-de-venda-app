@@ -15,7 +15,7 @@ function App() {
       paymentMethodId: parseInt(paymentMethodId),
     };
 
-    await fetch("http://localhost:3000/api/orders", {
+    await fetch("https://backend-alpha-smoky.vercel.app/api/orders", {
       method: "POST",
       body: JSON.stringify(payload),
       headers: {

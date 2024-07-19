@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 const useFetchData = (endpoint) => {
-  const apiUrl = 'http://localhost:3000/api/';
+  const apiUrl = 'https://backend-alpha-smoky.vercel.app/api/';
   const [data, setData] = useState([]);
 
   useEffect(() => {
