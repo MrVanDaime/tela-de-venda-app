@@ -37,7 +37,7 @@ const OrdersByClient = () => {
         </select>
       </div>
 
-      {orders && !orders.hasOwnProperty("error") ? (
+      {orders.length > 0 && !orders.hasOwnProperty("error") ? (
         <OrdersByClientTable orders={orders} />
       ) : (
         <div className="mt-2">{orders.error}</div>
